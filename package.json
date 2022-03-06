@@ -18,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/lucasbusso/LandingMusica/issues"
   },
-  "homepage": "https://github.com/lucasbusso/LandingMusica#readme"
+  "homepage": "https://github.com/lucasbusso/LandingMusica#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "uuid": "^7.0.3"
+  }
 }

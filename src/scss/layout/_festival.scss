@@ -1,0 +1,28 @@
+.artista{
+    padding: 5rem 0;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+    }
+}
+.contenido-festival{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        background-color: $rosa;
+        color: $blanco;
+        padding: 0 1rem;
+    }
+    .fecha{
+        font-weight: $bold;
+        color: $rosa;
+        margin: 10px 0;
+    }
+    .texto{
+        line-height: 2.5rem;
+        margin: 0;
+    }
+}
