@@ -2,24 +2,48 @@
     background-color: $rosa;
     padding: 3rem 0;
 
-    h3, p{
+    h2{
+        position: absolute;
+        right:0;
+        margin: 2rem 4rem;
+        width: 45%;
+        background-color: $blanco;
+        color: $rosa;
+        text-align: center;
+        padding: 1.2rem;
+        text-transform: uppercase;
+
+        @include shadow;
+        
+
+    }
+    p{
         text-align: center;
         color: $blanco;
     }
     .dia{
         text-transform: uppercase ;
-        margin: 4rem 0;
+        margin: 13rem 0 0 0;
     }
 }
 
 .escenarios-contenedor{
-    @include table{
-        @include grid(2, $separacion);
+    @include tablet{
+
     }
 
     .nombre-escenario{
         color: $negro;
         font-size: 2rem;
         font-weight: $thin;
+
+        &:after{
+            content: '';
+            width: 20rem;
+            height: 10rem;
+            display: block;
+            
+            margin: 2rem auto 0 auto;
+        }
     }
 }
