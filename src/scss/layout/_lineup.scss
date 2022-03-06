@@ -1,0 +1,25 @@
+.lineup{
+    background-color: $rosa;
+    padding: 3rem 0;
+
+    h3, p{
+        text-align: center;
+        color: $blanco;
+    }
+    .dia{
+        text-transform: uppercase ;
+        margin: 4rem 0;
+    }
+}
+
+.escenarios-contenedor{
+    @include table{
+        @include grid(2, $separacion);
+    }
+
+    .nombre-escenario{
+        color: $negro;
+        font-size: 2rem;
+        font-weight: $thin;
+    }
+}

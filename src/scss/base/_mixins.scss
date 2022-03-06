@@ -15,3 +15,8 @@
         @content;
     }
 }
+
+@mixin grid (){
+    display: grid;
+    grid-template-columns: $column;
+}
