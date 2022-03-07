@@ -399,7 +399,7 @@ h3 {
     display: flex;
     max-width: 3.2%;
     position: absolute;
-    margin: 0 10rem;
+    margin: -1rem 13rem;
   }
   .background-header .right {
     display: flex;
@@ -407,7 +407,7 @@ h3 {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 4.5rem 9rem;
+    margin: 3.7rem 13rem;
   }
 }
 
@@ -439,6 +439,7 @@ h3 {
   text-shadow: 2px 5px 0px #f53756;
   margin-bottom: 1rem;
   text-align: center;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .header h1 {
@@ -461,9 +462,12 @@ h3 {
   color: #fef46d;
 }
 .navegacion-principal .tickets {
-  background-color: #f53756;
+  background-color: #378783;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 3px;
+}
+.navegacion-principal .tickets:hover {
+  background-color: #28625f;
 }
 
 .video {
@@ -531,11 +535,11 @@ h3 {
   height: 44vh;
   position: relative;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .artista {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 .artista .imagen {
@@ -556,6 +560,7 @@ h3 {
 .contenido-festival h2 {
   background-color: #f53756;
   color: #fff9a0;
+  font-weight: 900;
   padding: 1rem 1rem;
   box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
   -webkit-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
@@ -659,6 +664,36 @@ h3 {
 }
 .calendario li span {
   font-weight: 400;
+}
+
+.galery {
+  padding: 2rem 0;
+}
+.galery h3 {
+  text-align: center;
+}
+
+.img-galery {
+  padding: 0;
+  list-style: none;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .img-galery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .img-galery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
 }
 
 body {

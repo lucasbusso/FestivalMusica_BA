@@ -1,11 +1,13 @@
 .artista{
     height: 44vh;
     position: relative;
-    @include tablet {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 5rem;
+    @include desktop {
+        @include grid (2, $separacion);
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // column-gap: 5rem;
     }
+
     .imagen{
         position: absolute;
         max-width:50%;
@@ -26,6 +28,7 @@
     h2{
         background-color: $rosa;
         color: $amarillo-bg;
+        font-weight: $black;
         padding: 1rem 1rem;
         @include shadow;
         text-align: center;
