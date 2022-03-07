@@ -9,6 +9,7 @@
         width: 45%;
         background-color: $blanco;
         color: $rosa;
+        font-weight: $black;
         text-align: center;
         padding: 1.2rem;
         text-transform: uppercase;
@@ -23,7 +24,7 @@
         text-shadow: 2px 5px 0px #000000;
         letter-spacing: .4rem;
         font-size: 6rem;
-        color: $verde;
+        color: $amarillo;
         text-transform: uppercase ;
         margin: 13rem 0 3rem 0;
     }
@@ -40,21 +41,32 @@
 
 .escenarios-contenedor{
     @include tablet{
-        @include grid(2, 10rem);
+        @include grid(2, 15rem);
     }
 
     .nombre-escenario{
-        color: $negro;
-        font-size: 2rem;
-        font-weight: $thin;
+        color: $rosa;
+        font-size: 3rem;
+        font-weight: $bold;
+        background-color: $amarillo-bg;
+        padding: 1.2rem 0;
+        @include shadow;
+    }
+}
 
-        &:after{
-            content: '';
-            width: 20rem;
-            height: 10rem;
-            display: block;
+.calendario{
+    padding: 0;
+    list-style: none;
 
-            margin: 2rem auto 0 auto;
+    li{
+        padding: 2rem;
+        font-weight: $bold;
+        color: $blanco;
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        span{
+            font-weight: $regular;
         }
     }
 }

@@ -1,6 +1,8 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    min-height: 100%;
+    background-color: $amarillo-bg;
 }
 
 *, *:before, *:after{
@@ -13,9 +15,16 @@ body{
         margin: 0;
         height: 100%;
         width: 100%;
-        background-color: $amarillo-bg;
-}
 
+        // .contenainer-img{
+        //         background-image: url('../../img/HeadsinSpace.png');
+        //         background-size: cover;
+        //         background-repeat: no-repeat;
+        //         background-position: center;
+        //         position: fixed;
+            
+        // }
+}
 
 p{
     font-size: 2rem;

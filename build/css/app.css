@@ -342,6 +342,8 @@ template {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  min-height: 100%;
+  background-color: #fff9a0;
 }
 
 *, *:before, *:after {
@@ -354,7 +356,6 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: #fff9a0;
 }
 
 p {
@@ -391,14 +392,6 @@ h2 {
 
 h3 {
   font-size: 3rem;
-}
-
-.bg-trap {
-  background: linear-gradient(0deg, rgba(208, 255, 254, 0.9) 0%, rgba(64, 150, 219, 0.8) 100%);
-}
-
-.bg-indie {
-  background: linear-gradient(0deg, rgba(255, 208, 237, 0.9) 0%, rgba(212, 64, 219, 0.8) 100%);
 }
 
 @media (min-width: 1200px) {
@@ -443,6 +436,7 @@ h3 {
   font-family: "Bangers", cursive;
   letter-spacing: 0.4rem;
   color: #fff;
+  text-shadow: 2px 5px 0px #f53756;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -512,7 +506,7 @@ h3 {
   font-family: "Bangers", cursive;
   letter-spacing: 0.4rem;
   color: #f53756;
-  text-shadow: 1px 5px 0px #76c7c3;
+  text-shadow: 1px 5px 0px #fff;
   font-size: 10rem;
   text-align: center;
 }
@@ -602,6 +596,7 @@ h3 {
   width: 45%;
   background-color: #fff;
   color: #f53756;
+  font-weight: 900;
   text-align: center;
   padding: 1.2rem;
   text-transform: uppercase;
@@ -618,7 +613,7 @@ h3 {
   text-shadow: 2px 5px 0px #000000;
   letter-spacing: 0.4rem;
   font-size: 6rem;
-  color: #76c7c3;
+  color: #fef46d;
   text-transform: uppercase;
   margin: 13rem 0 3rem 0;
 }
@@ -636,20 +631,34 @@ h3 {
   .escenarios-contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10rem;
+    gap: 15rem;
   }
 }
 .escenarios-contenedor .nombre-escenario {
-  color: #000;
-  font-size: 2rem;
-  font-weight: 300;
+  color: #f53756;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #fff9a0;
+  padding: 1.2rem 0;
+  box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  -webkit-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  -moz-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
 }
-.escenarios-contenedor .nombre-escenario:after {
-  content: "";
-  width: 20rem;
-  height: 10rem;
-  display: block;
-  margin: 2rem auto 0 auto;
+
+.calendario {
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.calendario li span {
+  font-weight: 400;
 }
 
 body {
