@@ -12,24 +12,35 @@
         text-align: center;
         padding: 1.2rem;
         text-transform: uppercase;
-
         @include shadow;
-        
-
     }
     p{
         text-align: center;
         color: $blanco;
     }
-    .dia{
+    .dia18{
+        font-family: $fuenteHeading;
+        text-shadow: 2px 5px 0px #000000;
+        letter-spacing: .4rem;
+        font-size: 6rem;
+        color: $verde;
         text-transform: uppercase ;
-        margin: 13rem 0 0 0;
+        margin: 13rem 0 3rem 0;
+    }
+    .dia19 {
+        font-family: $fuenteHeading;
+        text-shadow: 2px 5px 0px #000000;
+        letter-spacing: .4rem;
+        font-size: 6rem;
+        color: $amarillo;
+        text-transform: uppercase;
+        margin: 3rem 0 3rem 0;
     }
 }
 
 .escenarios-contenedor{
     @include tablet{
-
+        @include grid(2, 10rem);
     }
 
     .nombre-escenario{
@@ -42,7 +53,7 @@
             width: 20rem;
             height: 10rem;
             display: block;
-            
+
             margin: 2rem auto 0 auto;
         }
     }

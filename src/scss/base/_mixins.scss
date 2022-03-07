@@ -16,7 +16,21 @@
     }
 }
 
-@mixin grid (){
+@mixin grid($columnas, $espaciado) {
     display: grid;
-    grid-template-columns: $column;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+
+}
+
+@mixin shadow{
+            box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+            -webkit-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+            -moz-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+}
+
+@mixin in-shadow{
+        box-shadow: -17px -19px 35px -14px rgba(255, 255, 255, 0.35) inset;
+        -webkit-box-shadow: -17px -19px 35px -14px rgba(255, 255, 255, 0.35) inset;
+        -moz-box-shadow: -17px -19px 35px -14px rgba(255, 255, 255, 0.35) inset;
 }

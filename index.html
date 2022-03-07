@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-
+    <div class="background-header">
+        <img class="left" src="src/img/Goodies - Happy Flame.png" alt="background">
+        <img class="right" src="src/img//Goodies - Heart Yellow.png" alt="background">
+    </div>
     <header class="header">
         <div class="contenedor contenido-header">
             <h1>Festival BA 2022</h1>
@@ -16,7 +19,7 @@
             <nav class="navegacion-principal">
                 <a href="#">Line up</a>
                 <a href="#">Galeria</a>
-                <a href="#">Entradas</a>
+                <a class="tickets" href="#">Entradas</a>
             </nav>
         </div>
     </header>
@@ -24,8 +27,8 @@
     <div class="video">
         <div class="overlay">
             <div class="contenedor contenido-video">
-                <h2>Festival BA 2022 </h2>
-                <span>Marzo en Buenos Aires</span>
+                <h2>Festival BA 2022 </h2>        
+                <p>18 y 19 de Marzo <br> <span>en el Hipódromo de Palermo</span></p>
             </div>
         </div>
         <video controls autoplay muted loop>
@@ -35,23 +38,25 @@
         </video>
     </div>
 
-    <div class="artista contenedor">
+    <div class="artista ">
         <div class="imagen">
             <img src="build/img/imagen_vocalista.jpg" alt="vocalista">
         </div>
         <div class="contenido-festival">
             <h2>Festival BA </h2>
-            <p class="fecha">Marzo 2022, Buenos Aires.</p>
+            <p class="fecha">18 y 19 de Marzo, <span>Hipódromo de Palermo.</span></p>
             <p class="texto">El Gobierno de la Provincia te invita a disfrutar un festival con los artistas
-                             mas relevantes de la actualidad. Conocé mas abajo la propuesta cultural y gastronómica.
-                            </p>
+                             mas relevantes de la actualidad. Conocé mas abajo la propuesta cultural y gastronómica.</p>
+                             
+            <p class="text-heading">La música está en nuestro ADN </p>
+
         </div>
     </div>
 
     <section class="lineup"> <!-- Uso SECTION porque el primer elemento es un Heading-->
-        <h3>Line Up</h3>
+        <h2>Line Up</h2>
 
-        <p class="dia">Viernes 18</p>
+        <p class="dia18">Viernes 18</p>
         <div class="escenarios-contenedor contenedor">
             <div class="escenario trap bg-trap">
                 <p class="nombre-escenario">TRAP</p>
@@ -73,7 +78,7 @@
             </div>
         </div>
 
-        <p class="dia">Sábado 19</p>
+        <p class="dia19">Sábado 19</p>
         <div class="escenarios-contenedor contenedor">
             <div class="escenario trap bg-trap">
                 <p class="nombre-escenario">TRAP</p>

@@ -1,8 +1,36 @@
+.background-header{
+    @include desktop{
+            .left {
+                display: flex;
+                max-width: 3.2%;
+                position: absolute;
+                margin: 0 10rem;
+            }
+
+            .right {
+                display: flex;
+                max-width: 4%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 4.5rem 9rem;
+            }
+    }
+
+}
+
 .header{
+    display:flex;
+    margin: 3rem auto;
+    max-width: 60%;
     background: $verde;
+    outline: 3px dotted $rosa;
+    outline-offset: 10px;
+    @include shadow;
+
 
     .contenido-header{
-        padding: $separacion  0;
+        padding: 1.2rem  0;
         
         @include tablet {
             display: flex;
@@ -12,6 +40,8 @@
     }
 
     h1{
+        font-family: $fuenteHeading;
+        letter-spacing: .4rem;
         color: $blanco;
         margin-bottom: 1rem;
         text-align: center;
@@ -28,11 +58,17 @@
     justify-content: center;
     
     a{
+        display: flex;
         color: $blanco;
-        font-size: 2rem;
-
+        font-size: 1.5rem;
+        align-items: center;
         &:hover{
             color: $amarillo;
         }
+    }
+    .tickets{
+        background-color: $rosa;
+        padding: 1rem;
+        border-radius: 8px;
     }
 }

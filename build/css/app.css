@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -350,6 +351,10 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff9a0;
 }
 
 p {
@@ -388,11 +393,44 @@ h3 {
   font-size: 3rem;
 }
 
+.bg-trap {
+  background: linear-gradient(0deg, rgba(208, 255, 254, 0.9) 0%, rgba(64, 150, 219, 0.8) 100%);
+}
+
+.bg-indie {
+  background: linear-gradient(0deg, rgba(255, 208, 237, 0.9) 0%, rgba(212, 64, 219, 0.8) 100%);
+}
+
+@media (min-width: 1200px) {
+  .background-header .left {
+    display: flex;
+    max-width: 3.2%;
+    position: absolute;
+    margin: 0 10rem;
+  }
+  .background-header .right {
+    display: flex;
+    max-width: 4%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4.5rem 9rem;
+  }
+}
+
 .header {
-  background: #4cb8b3;
+  display: flex;
+  margin: 3rem auto;
+  max-width: 60%;
+  background: #76c7c3;
+  outline: 3px dotted #f53756;
+  outline-offset: 10px;
+  box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  -webkit-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  -moz-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
 }
 .header .contenido-header {
-  padding: 2rem 0;
+  padding: 1.2rem 0;
 }
 @media (min-width: 768px) {
   .header .contenido-header {
@@ -402,6 +440,8 @@ h3 {
   }
 }
 .header h1 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.4rem;
   color: #fff;
   margin-bottom: 1rem;
   text-align: center;
@@ -418,19 +458,27 @@ h3 {
   justify-content: center;
 }
 .navegacion-principal a {
+  display: flex;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  align-items: center;
 }
 .navegacion-principal a:hover {
   color: #fef46d;
 }
+.navegacion-principal .tickets {
+  background-color: #f53756;
+  padding: 1rem;
+  border-radius: 8px;
+}
 
 .video {
   position: relative;
-  max-height: 30rem;
+  max-height: 50rem;
   overflow: hidden;
 }
 .video .overlay {
+  display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -445,7 +493,7 @@ h3 {
   /* IE6-9 fallback on horizontal gradient */
 }
 .video video {
-  display: block;
+  display: flex;
   position: relative;
   width: 100%;
   top: -20rem;
@@ -461,25 +509,33 @@ h3 {
   gap: 1.5rem;
 }
 .contenido-video h2 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.4rem;
+  color: #f53756;
+  text-shadow: 1px 5px 0px #76c7c3;
+  font-size: 10rem;
+  text-align: center;
+}
+.contenido-video p {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  color: #000;
-  font-size: 5rem;
-  background-color: rgba(240, 224, 10, 0.7);
-  padding: 1rem;
-}
-.contenido-video span {
   color: #fff;
   background-color: #f53756;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0.5rem 0.8rem;
-  box-sizing: content-box;
-  width: 31%;
+  max-width: 65%;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+}
+.contenido-video p span {
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 .artista {
-  padding: 5rem 0;
+  height: 44vh;
+  position: relative;
 }
 @media (min-width: 768px) {
   .artista {
@@ -488,25 +544,112 @@ h3 {
     column-gap: 5rem;
   }
 }
+.artista .imagen {
+  position: absolute;
+  max-width: 50%;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -1000;
+}
 
 .contenido-festival {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 4.8rem 4rem;
 }
 .contenido-festival h2 {
   background-color: #f53756;
-  color: #fff;
-  padding: 0 1rem;
+  color: #fff9a0;
+  padding: 1rem 1rem;
+  box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  -webkit-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  -moz-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  text-align: center;
 }
 .contenido-festival .fecha {
   font-weight: 700;
   color: #f53756;
-  margin: 10px 0;
+  margin: 1.9rem 3rem;
+}
+.contenido-festival .fecha span {
+  font-weight: 400;
 }
 .contenido-festival .texto {
-  line-height: 2.5rem;
-  margin: 0;
+  line-height: 3.5rem;
+  margin: 0 3rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.contenido-festival .text-heading {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #f53756;
+  margin: 5.5rem 0;
+  text-align: center;
+}
+
+.lineup {
+  background-color: #f53756;
+  padding: 3rem 0;
+}
+.lineup h2 {
+  position: absolute;
+  right: 0;
+  margin: 2rem 4rem;
+  width: 45%;
+  background-color: #fff;
+  color: #f53756;
+  text-align: center;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  -webkit-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+  -moz-box-shadow: 8px 8px 25px -15px rgba(77, 77, 77, 0.75);
+}
+.lineup p {
+  text-align: center;
+  color: #fff;
+}
+.lineup .dia18 {
+  font-family: "Bangers", cursive;
+  text-shadow: 2px 5px 0px #000000;
+  letter-spacing: 0.4rem;
+  font-size: 6rem;
+  color: #76c7c3;
+  text-transform: uppercase;
+  margin: 13rem 0 3rem 0;
+}
+.lineup .dia19 {
+  font-family: "Bangers", cursive;
+  text-shadow: 2px 5px 0px #000000;
+  letter-spacing: 0.4rem;
+  font-size: 6rem;
+  color: #fef46d;
+  text-transform: uppercase;
+  margin: 3rem 0 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+  }
+}
+.escenarios-contenedor .nombre-escenario {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.escenarios-contenedor .nombre-escenario:after {
+  content: "";
+  width: 20rem;
+  height: 10rem;
+  display: block;
+  margin: 2rem auto 0 auto;
 }
 
 body {

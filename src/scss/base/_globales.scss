@@ -10,7 +10,12 @@ html{
 body{
     font-family: $fuentePrincipal;
     font-size: 1.6rem;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $amarillo-bg;
 }
+
 
 p{
     font-size: 2rem;
