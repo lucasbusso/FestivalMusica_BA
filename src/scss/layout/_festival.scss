@@ -1,6 +1,7 @@
 .artista{
     height: 44vh;
     position: relative;
+
     @include desktop {
         @include grid (2, $separacion);
         // display: grid;
@@ -18,6 +19,7 @@
         
     }
 }
+
 .contenido-festival{
     display: flex;
     flex-direction: column;
@@ -29,7 +31,7 @@
         background-color: $rosa;
         color: $amarillo-bg;
         font-weight: $black;
-        padding: 1rem 1rem;
+        padding: 1.2rem;
         @include shadow;
         text-align: center;
     }

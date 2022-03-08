@@ -1,11 +1,10 @@
 .video{
     position: relative;
-    max-height: 50rem;
+    max-height: 60rem;
     overflow: hidden;
 
     .overlay{
-        display: flex;
-
+       
         position: absolute;
         width: 100%;
         height: 100%;
@@ -17,48 +16,36 @@
 
     }
     video{
-        display: flex;
-        position: relative;
+        display: block;
         width: 100%;
-        top: -20rem;
     } 
 }
 
+
 .contenido-video{
     display: flex;
-    height: 100%;
-    flex-direction: column;
+    align-items: center;
+    width: 100%;
     justify-content: center;
+    height: 100%;
     position: relative;
     z-index: 1;
-    gap: 1.5rem;
-
-    h2 {
-        // background-color: $amarillo-bg;
-        font-family:  $fuenteHeading;
-        letter-spacing: .4rem;
-        color: $rosa;
-        text-shadow: 1px 5px 0px $blanco;
-        font-size: 10rem;
-        text-align: center;
-        //mix-blend-mode:overlay;
-    }
-
     
-    p{
+    h2 {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         color: $blanco;
-        background-color: $rosa;
-        font-size: 3rem;
-        padding: .5rem .8rem;
-        max-width: 65%;
-        font-weight: $bold;
-        text-align: center;
-        margin: 0 auto;
-        span{
+        font-size: 8rem;
+
+        span {
+            display: flex;
+            flex-direction: column;
+            background-color: $rosa;
+            font-size: 2.5rem;
+            padding: .5rem .8rem;
             font-weight: $regular;
-            font-size: 1.6rem;
+            margin: 4rem 0;
         }
     }
 }
