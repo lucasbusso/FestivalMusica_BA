@@ -11,6 +11,9 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const sourcemaps = require('gulp-sourcemaps');
 
+//Utilidades JS
+const terser = require('gulp-terser-js'); //minifica el javascript
+
 //Funciones que compilan SASS
 
 const paths = {
@@ -27,15 +30,12 @@ function css(  ){
         .pipe( dest('./build/css') )
 }
 
-function minificarcss(){
-    return src( paths.scss )
-        .pipe( sass({}) )
-        .pipe( dest('./build/css') )
-}
-
 function javascript(){
     return src( paths.js )
+        .pipe( sourcemaps.init())
         .pipe( concat('bundle.js') )
+        .pipe( terser())
+        .pipe( sourcemaps.write('.'))
         .pipe( dest('./build/js'))
 }
 
@@ -59,7 +59,6 @@ function watchFile(){ //esta función compila los archivos sass y actualiza auto
 }
 
 exports.css = css; 
-exports.minificarcss = minificarcss;
 exports.imagenes = imagenes;
 exports.watchFile = watchFile;
 
