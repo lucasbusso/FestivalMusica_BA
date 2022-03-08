@@ -35,9 +35,9 @@
                     <h1>Festival BA</h1>
 
                     <nav class="navegacion-principal">
-                        <a href="#">Line up</a>
-                        <a href="#">Galeria</a>
-                        <a class="tickets" href="#">Entradas</a>
+                        <a href="#lineup">Line up</a>
+                        <a href="#galeria">Galeria</a>
+                        <a class="tickets" href="#entradas">Entradas</a>
                     </nav>
                 </div>
             </header>
@@ -74,7 +74,7 @@
                 </div>
             </div>
 
-            <section class="lineup"> <!-- Uso SECTION porque el primer elemento es un Heading-->
+            <section class="lineup" id="lineup"> <!-- Uso SECTION porque el primer elemento es un Heading-->
                 <h2>Line Up</h2>
 
                 <p class="dia18">Viernes 18</p>
@@ -122,13 +122,93 @@
                 </div>
             </section>
 
-            <section class="galeria contenedor">
+            <section class="galeria contenedor" id="galeria">
                 <h3>Galeria</h3>
                 <ul class="galeria-imagenes">
                     
                 </ul>
             </section>
 
+            <section class="boletos bg-boletos" id="entradas">
+                <h3 class="contenedor">Entradas</h3>
+                <div class="contenedor-boletos contenedor">
+                   
+                    <div class="basico plan">
+                        <p>1 día</p>
+                        <table class="pase">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Incluye
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Acceso a los dos escenarios
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Baños y propuestas Gastronómicas
+                                    </td>
+                                </tr>                            
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        $100
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class="premium plan">
+                        <p>2 días</p>
+                             <table class="pase">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Incluye
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Acceso a los dos escenarios
+                                    </td>
+                                </tr>    
+                                <tr>
+                                    <td>
+                                        Baños y propuestas Gastronómicas
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Merchandising
+                                    </td>
+                                </tr>                                       
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        $180
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>
+                    Festival BA 2022 - Lucas Busso <span> FrontEnd Dev</span> 
+                </p>
+            </footer>
             <script src="build/js/bundle.js"></script>
 </body>
 </html>

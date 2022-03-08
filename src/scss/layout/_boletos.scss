@@ -1,0 +1,73 @@
+.boletos{
+    padding: $separacion 0;
+    background-color: $rosa;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, .35) inset;
+
+    h3{
+        text-align: center;
+        background-color: $amarillo-bg;
+        color: $rosa;
+        padding: 1.2rem;
+        border-radius: 4px;
+        font-weight: $black;
+        @include shadow;
+        margin-top: 6rem ;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+    .contenedor-boletos{
+        margin-top: 3rem;
+        @include grid (2, 5rem);
+    }
+
+    .plan{
+        p{
+            color: $amarillo-bg;
+            font-family: $fuenteHeading;
+            text-shadow: 2px 5px 0px #000000;
+            letter-spacing: .4rem;
+            font-size: 6rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.pase{
+    background-color: $blanco;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 6rem;
+    @include shadow;
+    thead{
+        th{
+            padding: 1.5rem;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: $black;
+        }
+    }
+    tbody{
+        td{
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(0,0,0,.3);
+        }
+    }
+    tr:last-of-type{
+        td{
+            border: none;
+        }
+    }
+    tfoot{
+        background-color: $amarillo;
+        color: $rosa;
+        text-align: center;
+        
+        td{
+            
+            padding: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: $bold;
+        }
+    }
+}

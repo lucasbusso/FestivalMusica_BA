@@ -7,10 +7,11 @@
         border-radius: 4px;
         @include shadow;
         padding: 1.2rem;
-        margin: 2rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
         font-weight: $bold;
         color: $amarillo-bg;
-        max-width: 100%;
+        cursor: pointer;
     }
 }
 
