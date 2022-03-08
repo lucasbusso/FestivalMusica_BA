@@ -18,7 +18,7 @@ function navegacionFija() {
     });
 
     // Elemento a observar
-    observer.observe(document.querySelector('.sobre-festival'));
+    observer.observe(document.querySelector('.video'));
 }
 
 function scrollNav() {

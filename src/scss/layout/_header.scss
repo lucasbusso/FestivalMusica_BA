@@ -19,7 +19,7 @@
     background: $rosa;
     border-radius: 4px;
     @include shadow;
-
+    z-index: 1000000000000;
     .contenido-header {
         padding: 1.2rem 0;
         @include tablet {
@@ -40,6 +40,13 @@
         @include tablet {
             margin-bottom: 0;
         }
+    }
+
+    &.fijo{
+        position: fixed;
+        width: 100%;
+        @include shadow;
+        display:block;        
     }
 }
 
