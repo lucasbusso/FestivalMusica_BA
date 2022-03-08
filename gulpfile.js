@@ -13,6 +13,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 //Utilidades JS
 const terser = require('gulp-terser-js'); //minifica el javascript
+const rename = require('gulp-rename');
 
 //Funciones que compilan SASS
 
@@ -36,6 +37,7 @@ function javascript(){
         .pipe( concat('bundle.js') )
         .pipe( terser())
         .pipe( sourcemaps.write('.'))
+        .pipe( rename({  suffix : '.min'}))
         .pipe( dest('./build/js'))
 }
 

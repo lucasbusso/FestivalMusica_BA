@@ -46,7 +46,7 @@
         position: fixed;
         width: 100vw;
         @include shadow;
-               
+        opacity: .8;       
     }
 }
 
