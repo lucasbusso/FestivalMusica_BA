@@ -1,20 +1,13 @@
-
-
 .header{
     display:flex;
     margin: 3rem auto;
     max-width: 50%;
     background: $rosa;
     border-radius: 4px;
-    // outline: 3px dotted $rosa; 
-    // outline-offset: 10px;
     @include shadow;
 
-}
-
-    .contenido-header{
-        padding: 1.2rem  0;
-        
+    .contenido-header {
+        padding: 1.2rem 0;
         @include tablet {
             display: flex;
             justify-content: space-between;
@@ -22,10 +15,11 @@
         }
     }
 
-    h1{
+    h1 {
         font-family: $fuenteHeading;
+        font-size: 5rem;
         letter-spacing: .3rem;
-        color: $blanco;
+        color: $amarillo-bg;
         margin-bottom: 1rem;
         text-align: center;
         cursor: pointer;
@@ -33,6 +27,7 @@
             margin-bottom: 0;
         }
     }
+}
 
 .navegacion-principal{
     display: flex;
