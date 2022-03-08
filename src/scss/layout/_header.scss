@@ -1,4 +1,18 @@
+.background-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 7rem;
+    margin-top: .15rem;
+    position: absolute;
+    img {
+        width: 4%;
+    }
+}
+
 .header{
+    position: relative;
     display:flex;
     margin: 3rem auto;
     max-width: 50%;
@@ -33,10 +47,10 @@
     display: flex;
     gap: 1.8rem;
     justify-content: center;
-    a{
+    a {
         display: flex;
         color: $blanco;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         align-items: center;
         &:hover{
             color: $amarillo;
@@ -49,22 +63,7 @@
         border-radius: 3px;
 
         &:hover{
-            background-color: darken($verde, 35);
+            background-color: darken($rosa, 30);
         }
-    }
-}
-
-.background-header {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 14rem;
-    top: 2%;
-    margin: 0;
-
-    img {
-        width: 4%;
     }
 }

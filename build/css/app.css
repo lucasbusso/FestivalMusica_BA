@@ -371,6 +371,7 @@ p {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -394,7 +395,21 @@ h3 {
   font-size: 3rem;
 }
 
+.background-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 7rem;
+  margin-top: 0.15rem;
+  position: absolute;
+}
+.background-header img {
+  width: 4%;
+}
+
 .header {
+  position: relative;
   display: flex;
   margin: 3rem auto;
   max-width: 50%;
@@ -437,7 +452,7 @@ h3 {
 .navegacion-principal a {
   display: flex;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   align-items: center;
 }
 .navegacion-principal a:hover {
@@ -449,21 +464,7 @@ h3 {
   border-radius: 3px;
 }
 .navegacion-principal .tickets:hover {
-  background-color: #28625f;
-}
-
-.background-header {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 14rem;
-  top: 2%;
-  margin: 0;
-}
-.background-header img {
-  width: 4%;
+  background-color: #8c071d;
 }
 
 .video {
