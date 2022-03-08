@@ -5,6 +5,12 @@ const notify = require('gulp-notify');
 const webp = require('gulp-webp');
 const concat = require('gulp-concat');
 
+//Utilidades css
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
+const cssnano = require('cssnano');
+const sourcemaps = require('gulp-sourcemaps');
+
 //Funciones que compilan SASS
 
 const paths = {
@@ -14,7 +20,10 @@ const paths = {
 }
 function css(  ){
     return src( paths.scss )
+        .pipe( sourcemaps.init()) //identifica dónde esta la referencia del codigo css para poder encontrarlo luego de la minificacion
         .pipe( sass({}) )
+        .pipe( postcss( [autoprefixer(), cssnano()]))
+        .pipe( sourcemaps.write('.'))
         .pipe( dest('./build/css') )
 }
 

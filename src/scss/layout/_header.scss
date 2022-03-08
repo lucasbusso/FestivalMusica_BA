@@ -44,9 +44,9 @@
 
     &.fijo{
         position: fixed;
-        width: 100%;
+        width: 100vw;
         @include shadow;
-        display:block;        
+               
     }
 }
 
